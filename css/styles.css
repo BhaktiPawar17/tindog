@@ -1,0 +1,178 @@
+body{
+    font-family: "Montserrat",sans-serif;
+    text-align:center;
+}
+
+/* combining selectors
+   multiple selectors
+   selector1, selector2 {}
+*/
+h1, h2, h3, h4, h5, h6{
+    font-family:'Montserrat',sans-serif;
+    font-weight:bold;
+}
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+.colored-section{
+    background-color: #ff4c68;
+    color:white;
+}
+
+.white-section{
+    background-color: #fff;
+}
+
+/* headings */
+.big-heading{
+    font-family: "Montserrat",sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* title section */
+
+/* combining selectors 
+   hierarchical selectors
+   selector1 selector2 {}   1st selector is from parent selector1 can be anything class id elemeny and
+   second selector is from child selector2 can be anything class id heading
+*/
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+#iphone{
+    width:25%;
+    transform: rotate(25deg);
+    position:absolute;
+    right:20%;
+}
+.button-download{
+    margin:5% 3% 5% 0;
+}
+
+/* navigation bar */
+.navbar{
+    padding:0 0 4.5rem;
+}
+.navbar-brand{
+    font-family:'Ubuntu',sans-serif;
+    font-size:2.5rem;
+    font-weight:bold;
+}
+.nav-item{
+    padding:0 18px;
+}
+.nav-link{
+    font-size:1.2rem;
+    font-family:"Montserrat-Light";
+}
+
+/* features section */
+
+#features{
+    position: relative;
+    z-index: 1;
+}
+.features-h3{
+    font-size:1.3rem;
+}
+.features-icon{
+    color:#ef8172;
+    margin-bottom: 1rem;
+}
+.features-icon:hover{
+    color:#ff4c68;
+}
+.features-p{
+    color:grey;
+}
+.feature-box{
+    padding:3%;
+}
+
+/* testimonial section */
+
+.testimonial-h2{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+#testimonials{
+    background-color:#ef8172;
+}
+.testimonial-img{
+    width:10%;
+    border-radius:100%;
+    margin:20px;
+}
+
+/* press section */
+#press{
+    background-color:#ef8172;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width:15%;
+    margin:20px 20px 50px;
+}
+
+/* pricing section */
+.price-h2{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+#pricing{
+    padding:100px;
+    /* text-align:center; can be used instead of class text-center */
+}
+.pricing-column{
+    padding:3% 2%;
+}
+
+/* cta section */
+
+
+/* footer section */
+.social-icon{
+    margin: 20px 10px;
+}
+
+@media(max-width:1028px){
+    #title{
+        text-align:center;
+    }
+    #iphone{
+        position: static;
+        transform: rotate(0deg);
+        width: 60%;
+    }
+}
+/* .press-logo{
+    width:15%;
+    margin:20% 20% 50%;
+
+} */
+/*
+font-family: 'Ubuntu', sans-serif;
+custom class the which we make
+*/
+/* combining selectors
+   combined selectors :- selectors can be combined with class or id
+   selector1 can be an element, class or id and selector2 can be class or id there should no space betweem them
+   They all should occur in the same element
+   selector1#selector2 {}
+   selector1.selector2 {}
+
+   priority
+   the highest priority is of id and then class and then element
+   the highest priority is of inline css and then internal css and then external css
+*/

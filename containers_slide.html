@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>container</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container" style="background-color:bisque;">
+            Hello, how are you? Bhakti here.
+        </div>
+        <div class="container-fluid" style="background-color:magenta;">
+            Hello, how are you? Bhakti here.
+        </div>
+
+        <div id="testimonials-carousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-color:cadetblue; text-align:center;">
+                <h1>Hello</h1>
+              </div>
+              <div class="carousel-item" style="background-color:bisque; text-align:center;">
+                <h1>Bhakti</h1>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+              <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+        </div> 
+    </body>    
+</html>
+<!--
+    class="container" 
+    it allows us to horizontally center the elements in container class or to pad out our content by simply using container class
+    it is automatically responsive to the size of viewport that is for laptop tablet mobile
+
+    class="container-fluid"
+    it will take the full length of the screen
+
+    <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel" data-interval="1000" data-pause="hover">
+
+    data-interval="1000"
+    it will set the time to 1sec i.e the other screen will be visible after 1sec
+
+    data-pause="hover"
+    the slideshow will stop when we hover on screen that is when we move our cursor on screen
+
+    data-bs-slide="prev"
+    it will go backward
+    the slide will go on previous slide by clicking on that sign
+
+    data-bs-slide="next"
+    it will go forward
+    the slide will go on next slide by clicking on that sign
+
+    id for the carousel div should be unique for each page
+
+    data-bs-ride="false"
+    it will not be auto play
+
+    data-bs-ride="carousel"
+    it will be auto play
+
+    the id of the div and the data-bs-target property in button tag should have same value the only difference is that while writing the name 
+    in data-bs-target we will simply add a # befoore its name
+
+    span it is used to show that button sign by using the class which is shown in it
+
+    we can use <button> or <a> tag either
+        only the difference come in is that in button tag we specify type as button and in a tag we have to specify role as button 
+        and another difference is that in button tag we use data-bs-target="#name" so instead of this property we use href="#name" in a tag
+        and data-bs-slide stays same
+-->
